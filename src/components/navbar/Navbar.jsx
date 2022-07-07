@@ -17,6 +17,10 @@ const Navbar = () => {
     navigate("/login");
   };
 
+  const handleRegister = () => {
+    navigate("/register");
+  };
+
   return (
     <div className="navbar">
       <div className="navContainer">
@@ -32,7 +36,9 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="navItems">
-            <button className="navButton">Register</button>
+            <button className="navButton" onClick={handleRegister}>
+              Register
+            </button>
             <button className="navButton" onClick={handleLogin}>
               Login
             </button>
